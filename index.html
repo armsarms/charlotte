@@ -12,8 +12,9 @@
     var domain = "putgs7x9n.bkt.clouddn.com";
     var src = window.location.href;
     var prtc = src.substring(0, src.indexOf(':'));
-    var target = src.substring(src.indexOf('/', src.indexOf(':') + 3));
-    console.log('src:',src,'  prtc:',prtc,'  target:',target);
+    // var target = src.substring(src.indexOf('/', src.indexOf(':') + 3));
+    var target = src.split('/qiniu/')[1];
+    // console.log('src:',src,'  prtc:',prtc,'  target:',target);
     window.location.href = prtc + "://" + domain + target;
 </script>
 </html>
