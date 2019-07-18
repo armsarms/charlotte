@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>qiniu</title>
+</head>
+<body>
+</body>
+<script>
+    var domain = "putgs7x9n.bkt.clouddn.com";
+    var src = window.location.href;
+    var prtc = src.substring(0, src.indexOf(':'));
+    var target = src.substring(src.indexOf('/', src.indexOf(':') + 3));
+    console.log('src:',src,'  prtc:',prtc,'  target:',target);
+    window.location.href = prtc + "://" + domain + target;
+</script>
+</html>
