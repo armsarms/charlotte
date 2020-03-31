@@ -10,7 +10,7 @@
         content=MM应用商场是工信部首批“可信应用商店”，是中国移动精心打造的一站式手机应用与内容营销服务平台。所有的应用与内容均由过百人体验审核，过千台真机测试，让您随心下、安心享。MM应用商场提供海量免费优质安卓Android手机应用下载，汇集当下最流行好玩的安卓游戏、实用的安卓软件、热门推荐榜单，时下流行热门手机app软件与游戏合辑等，MM应用商场是最具人气的绿色安全的安卓应用商店！>
     <link rel=icon href=favicon.ico>
     <title>test1</title>
-    <link href=css/chunk-023202af.35672dbf.css rel=prefetch>
+    <!-- <link href=css/chunk-023202af.35672dbf.css rel=prefetch>
     <link href=css/chunk-0f75a9d8.04e388a6.css rel=prefetch>
     <link href=css/chunk-19353b78.441b74cd.css rel=prefetch>
     <link href=css/chunk-19ff930c.001a19ea.css rel=prefetch>
@@ -46,28 +46,51 @@
     <link href=js/app.22ed1322.js rel=preload as=script>
     <link href=js/chunk-vendors.9bece8a9.js rel=preload as=script>
     <link href=css/chunk-vendors.63f59523.css rel=stylesheet>
-    <link href=css/app.b2d12605.css rel=stylesheet>
+    <link href=css/app.b2d12605.css rel=stylesheet> -->
 </head>
 
 <body>
+    <div id=app></div>
     <script src="./vconsole.min.js"></script>
     <script>
-      // init vConsole
-      var vConsole = new VConsole();
-      console.log('Hello world');
-    </script>
-    <div id=app></div>
-    <script src=js/chunk-vendors.9bece8a9.js> 
-    </script> 
-    <script src=js/app.22ed1322.js> 
-    </script>  
-    <!-- <script> 
-        alert(111)
-        console.log('2123213')
-        // window.location.reload()
-        // if(/120.232.169.208/maap//.test(window.location.href) != "http://120.232.169.208/maap/#/main/"){
-            
+        var vConsole = new VConsole();
+        console.log('Hello world');
+        console.log('document.readyState', document.readyState);
+        var time = setInterval(() => {
+            if (document.readyState == "complete") { //当页面加载状态为完全结束时进入 
+                console.log('121', 121);
+                var importJs = document.createElement('script') //在页面新建一个script标签
+                var importJs2 = document.createElement('script') //在页面新建一个script标签
+                importJs.setAttribute("type", "text/javascript") //给script标签增加type属性
+                importJs.setAttribute("src",
+                    'js/chunk-vendors.9bece8a9.js') //给script标签增加src属性， url地址为cdn公共库里的
+                document.getElementsByTagName("head")[0].appendChild(importJs)
+                importJs2.setAttribute("type", "text/javascript") //给script标签增加type属性
+                importJs2.setAttribute("src",
+                    'js/app.22ed1322.js') //给script标签增加src属性， url地址为cdn公共库里的
+                document.getElementsByTagName("head")[0].appendChild(importJs2)
+                clearInterval(time);
+            } else {
+                console.log('12222',12222);
+            }
+        }, 1000);
+        // if (document.readyState == "loading") { //当页面加载状态为完全结束时进入 
+        //     console.log('121',121);
+        //     var importJs = document.createElement('script') //在页面新建一个script标签
+        //     var importJs2 = document.createElement('script') //在页面新建一个script标签
+        //     importJs.setAttribute("type", "text/javascript") //给script标签增加type属性
+        //     importJs.setAttribute("src",
+        //         'js/chunk-vendors.9bece8a9.js') //给script标签增加src属性， url地址为cdn公共库里的
+        //     document.getElementsByTagName("head")[0].appendChild(importJs)
+        //     importJs2.setAttribute("type", "text/javascript") //给script标签增加type属性
+        //     importJs2.setAttribute("src",
+        //         'js/app.22ed1322.js') //给script标签增加src属性， url地址为cdn公共库里的
+        //     document.getElementsByTagName("head")[0].appendChild(importJs2)
         // }
-        // window.location.href = "http://120.232.169.208/maap/#/main/"
-    </script>  -->
-    </body> </html>
+    </script>
+    <!-- <script src=js/chunk-vendors.9bece8a9.js> </script> -->
+    <!-- <script src=js/app.22ed1322.js> </script> -->
+
+</body>
+
+</html>
