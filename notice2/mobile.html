@@ -3,35 +3,60 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>公告</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>中国移动权益合作伙伴公开招募公告</title>
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <style>
     html,
     body {
-      min-width: 0px !important;
+      /* min-width: 0px !important; */
       height: 100%;
       margin: 0;
+      /* background: url('static/m_notice.png') no-repeat center center; */
+      position: relative;
+      /* background-size: 100%; */
+      width: 100%;
+      height: 100%;
+      font-family: "微软雅黑";
+      letter-spacing: 0.02rem;
+      background-attachment: fixed;
+      /* max-width: 375px; */
+      margin: 0;
     }
+    body:before {
+      content: ' ';
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url('static/m_notice.png') no-repeat;
+      /* background-size: cover; */
+      background-size: 100% 100%;
+      background-attachment: fixed;
+      }
 
     .m-notice-bg-img {
-      background: url('static/m_notice.png') no-repeat center center;
+      /* max-width: 750px; */
+      /* background: url('static/m_notice.png') no-repeat center center;
       position: relative;
       background-size: 100% 100%;
       width: 100%;
       height: 100%;
       font-family: "仿宋_GB2312";
-      letter-spacing: 0.02rem;
+      letter-spacing: 0.02rem; */
     }
 
     .m-notice-bg-img .notice {
       /* width: 2.95rem;
       height: 4.92rem; */
-      width: 80%;
-      height: 73%;
+      width: 90%;
+      /* height: 73%; */
       position: absolute;
       top: 0.6rem;
-      padding-left: 10%;
-      padding-right: 10%;
+      padding-left: 5%;
+      padding-right: 5%;
       /*background: rgba(0, 0, 0, 0.3);*/
       overflow: hidden;
       overflow-y: auto;
@@ -57,16 +82,17 @@
     }
 
     .m-notice-bg-img .notice_title {
-      font-size: 0.16rem;
-      text-align: center;
+      font-size: 0.19rem;
+      /* text-align: center; */
       color: #333333;
-      margin-top: 0;
+      margin-top: 0.24rem;
       margin-bottom: 0.24rem;
+      text-align: center;
     }
 
     .m-notice-bg-img .notice_condition {
       color: #333333;
-      font-size: 0.14rem;
+      font-size: 0.16rem;
       /*// padding-left: 10%;*/
       /*// padding-right: 10%;*/
       text-align: left;
@@ -75,7 +101,7 @@
 
     .m-notice-bg-img .notice_paragraph {
       color: #333333;
-      font-size: 0.14rem;
+      font-size: 0.16rem;
       /*// padding-left: 10%;*/
       /*// padding-right: 10%;*/
       text-align: left;
@@ -86,7 +112,7 @@
 
     .m-notice-bg-img .notice_subtitle {
       color: #333333;
-      font-size: 0.14rem;
+      font-size: 0.16rem;
       font-weight: bold;
       /*// padding-left: 10%;*/
       line-height: 0.24rem;
@@ -97,7 +123,7 @@
 
     .m-notice-bg-img .flowchar {
       color: #333333;
-      font-size: 0.14rem;
+      font-size: 0.16rem;
       /*// padding-left: 10%;*/
       /*// padding-right: 10%;*/
       text-align: left;
@@ -112,13 +138,13 @@
 
     .m-notice-bg-img .notice_enclosure {
       margin-top: 0.2rem;
-      font-size: 0.14rem;
+      font-size: 0.16rem;
       /*// padding-left: 10%;*/
     }
 
     .m-notice-bg-img .notice_ending {
       margin-top: 0.2rem;
-      font-size: 0.14rem;
+      font-size: 0.16rem;
       /*// padding-right: 10%;*/
       float: right;
       text-align: center;
@@ -134,14 +160,218 @@
       display: inline-block;
       margin-bottom: 0.1rem;
     }
-    .m-notice-bg-img .download{
+
+    .m-notice-bg-img .download {
       height: 0.20rem;
       width: 0.20rem;
       display: inline-block;
       background: url(./static/xiazai.png) no-repeat center center;
-      background-size:100% 100%;
-      margin-right: 0.10rem; 
+      background-size: 100% 100%;
+      margin-right: 0.10rem;
     }
+
+    .m-notice-bg-img .footer {
+      width: 100%;
+      height: 20%;
+      background: url(./static/m_notice-footer.png) no-repeat;
+      background-size: 100% 100%;
+      position: fixed;
+      bottom: 0;
+    }
+    .m-notice-bg-img .m_notice_logo{
+      width: 100%;
+      height: 6.5%;
+      background: url(./static/m_notice_logo.png) no-repeat;
+      background-size: 100% 100%;
+      position: fixed;
+      top: 0;
+    }
+    @media all and (orientation: landscape) {
+      html{
+        background: #fff;
+      }
+      body {
+      /* min-width: 0px !important; */
+      height: 100%;
+      margin: 0;
+      /* background: url('static/m_notice.png') no-repeat center center; */
+      position: relative;
+      background-size: 70% 100%;
+      width: 70%;
+      height: 100%!important;
+      font-family: "微软雅黑";
+      letter-spacing: 0.02rem;
+      background-attachment: fixed;
+      /* max-width: 375px; */
+      margin: 0 15%;
+    }
+    body:before {
+      content: ' ';
+      width: 70%;
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left:15%;
+      background: url('static/m_notice.png') no-repeat;
+      /* background-size: cover; */
+      background-size: 70% 100%;
+      }
+
+    .m-notice-bg-img {
+      /* max-width: 750px; */
+      /* background: url('static/m_notice.png') no-repeat center center;
+      position: relative;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 100%;
+      font-family: "微软雅黑";
+      letter-spacing: 0.02rem; */
+      position: relative;
+    }
+
+    .m-notice-bg-img .notice {
+      /* width: 2.95rem;
+      height: 4.92rem; */
+      width: 70%;
+      /* height: 73%; */
+      position: absolute;
+      top: 0.6rem;
+      padding-left: 15%;
+      padding-right: 15%;
+      /*background: rgba(0, 0, 0, 0.3);*/
+      overflow: hidden;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    .m-notice-bg-img .vague {
+      position: fixed;
+      width: 70%;
+      height: 1rem;
+      /*// background-image: linear-gradient(to top, #fff);*/
+      /*// opacity: 0.5;*/
+      bottom: 16%;
+      /* left: 0; */
+      left: 15%;
+      margin: 0;
+      background: -moz-linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+      background: -ms-linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1));
+      background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
+      background: -webkit-linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+      background: -o-linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+      background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+
+    .m-notice-bg-img .notice_title {
+      font-size: 0.19rem;
+      /* text-align: center; */
+      color: #333333;
+      margin-top: 0.24rem;
+      margin-bottom: 0.24rem;
+      text-align: center;
+    }
+
+    .m-notice-bg-img .notice_condition {
+      color: #333333;
+      font-size: 0.16rem;
+      /*// padding-left: 10%;*/
+      /*// padding-right: 10%;*/
+      text-align: left;
+      margin-bottom: 2.96vh;
+    }
+
+    .m-notice-bg-img .notice_paragraph {
+      color: #333333;
+      font-size: 0.16rem;
+      /*// padding-left: 10%;*/
+      /*// padding-right: 10%;*/
+      text-align: left;
+      line-height: 0.24rem;
+      margin: 0;
+      margin-bottom: 0.1rem;
+    }
+
+    .m-notice-bg-img .notice_subtitle {
+      color: #333333;
+      font-size: 0.16rem;
+      font-weight: bold;
+      /*// padding-left: 10%;*/
+      line-height: 0.24rem;
+      margin: 0;
+      margin-bottom: 0.1rem;
+      text-indent: 2em;
+    }
+
+    .m-notice-bg-img .flowchar {
+      color: #333333;
+      font-size: 0.16rem;
+      /*// padding-left: 10%;*/
+      /*// padding-right: 10%;*/
+      text-align: left;
+      line-height: 0.24rem;
+      margin: 0;
+    }
+
+    .m-notice-bg-img .flowchar img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .m-notice-bg-img .notice_enclosure {
+      margin-top: 0.2rem;
+      font-size: 0.16rem;
+      /*// padding-left: 10%;*/
+    }
+
+    .m-notice-bg-img .notice_ending {
+      margin-top: 0.2rem;
+      font-size: 0.16rem;
+      /*// padding-right: 10%;*/
+      float: right;
+      text-align: center;
+    }
+
+    .m-notice-bg-img .notice_span {
+      text-indent: 2em;
+      display: block;
+    }
+
+    .m-notice-bg-img .notice_ending span {
+      color: #333333;
+      display: inline-block;
+      margin-bottom: 0.1rem;
+    }
+
+    .m-notice-bg-img .download {
+      height: 0.20rem;
+      width: 0.20rem;
+      display: inline-block;
+      background: url(./static/xiazai.png) no-repeat center center;
+      background-size: 100% 100%;
+      margin-right: 0.10rem;
+    }
+
+    .m-notice-bg-img .footer {
+      width: 70%;
+      height: 24%;
+      background: url(./static/m_notice-footer.png) no-repeat;
+      background-size: 100% 100%;
+      position: fixed;
+      left: 15%;
+      bottom: 0;
+    }
+    .m-notice-bg-img .m_notice_logo{
+      width: 70%;
+      height: 10.5%;
+      background: url(./static/m_notice_logo.png) no-repeat;
+      background-size: 100% 100%;
+      position: fixed;
+      left: 15%;
+      top: 0;
+    }
+  }
   </style>
 </head>
 <script>
@@ -192,7 +422,7 @@
       <h4 class="notice_subtitle">三、招募和引入流程</h4>
       <p class="notice_paragraph">
         <span class="notice_span">1.合作意向招募搜集：有意向参与中国移动权益合作的合作伙伴，根据招募公告填写好“中国移动权益合作意向表”（详见附件）并通过指定报名方式报送至中国移动权益合作招募团队。</span>
-        <span class="notice_span">2.合作意向初步审核：中国移动权益合作招募团队在收到合作伙伴的意向申请表后第一时间进行合作意向审核，并在3个工作日内对合作伙伴进行答复，并提供后续的系统申报审核指引。</span>
+        <span class="notice_span">2.合作意向初步审核：中国移动权益合作招募团队在收到合作伙伴的意向申请表后第一时间进行合作意向审核，在3个工作日内对合作伙伴进行答复，并提供后续的系统申报审核指引。</span>
         <span class="notice_span">3.系统平台正式申报：中国移动权益合作招募团队为符合招募引入权益范围的合作伙伴统一分配中国移动全网权益平台的账号，合作伙伴在系统平台统一填报企业资质、准入条件、合作价格等方面的内容。</span>
         <span class="notice_span">4.权益合作引入审核：中国移动权益合作招募团队在收到合作伙伴在系统平台填报申请之后的5个工作日内，对合作伙伴的合作申报内容和条件进行审核，并将审核结果同步通知到合作伙伴。</span>
         <span class="notice_span">5.权益合作谈判签约：针对中国移动全网权益平台中审核通过后的权益合作伙伴，中国移动权益统一引入主体将在5个工作日内与合作伙伴联系并启动谈判签约，正式签约完成并将权益接入中国移动全网权益平台后，可实现合作伙伴的权益在中国移动权益超市的销售运营。</span>
@@ -214,20 +444,25 @@
       </p>
       <h4 class="notice_subtitle">四、合作报名方式</h4>
       <p class="notice_paragraph">
-        <span class="notice_span">符合合作基本条件和权益范围且有意向开展权益合作的合作伙伴，请将“中国移动权益合作意向表”（详见附件）发送至中国移动权益合作统一邮箱：
+        <span class="notice_span">符合合作基本条件和权益范围且有意向开展权益合作的合作伙伴，请将“中国移动权益合作意向表”（详见附件）发送至中国移动权益合作统一邮箱：<br/>
           <a href="javascript:;">cmccqyhz@chinamobile.com</a>。邮件标题请统一为： XX公司权益合作申请，邮件请附上“中国移动权益合作意向表”（包括填写完成的电子版，及加盖公章后的扫描件）。</span>
       </p>
-    <p class="notice_paragraph">
-      <span class="notice_span">在合作招募申报过程中，如有相关问题和疑问，欢迎联系中国移动权益合作招募团队联系人：韩威，15967110539。</span>
-    </p>
-      <p class="notice_enclosure">
-        <a  href="./static/20200402中国移动权益合作意向表.docx"><i class="download"></i>附件：权益合作意向申请表</a>
+      <p class="notice_paragraph">
+        <span class="notice_span">在合作招募申报过程中，如有相关问题和疑问，欢迎联系中国移动权益合作招募团队联系人：韩先生，15967110539。</span>
       </p>
-    <p class="notice_ending"><span>中国移动权益合作招募团队</span><br/>
-      <span style="margin-bottom:18.5vh">2020年4月</span>
-    </p>
+      <p class="notice_enclosure">
+        <a href="./static/中国移动权益合作意向表.docx">
+          <i class="download"></i>附件：中国移动权益合作意向表</a>
+      </p>
+      <p class="notice_ending">
+        <span>中国移动权益合作招募团队</span>
+        <br/>
+        <span style="margin-bottom:28.5vh">2020年4月</span>
+      </p>
       <p class="vague"></p>
     </div>
+    <div class="footer"></div>
+    <div class="m_notice_logo"></div>
   </div>
 </body>
 
