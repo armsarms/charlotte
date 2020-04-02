@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>公告</title>
+  <title>中国移动权益合作伙伴公开招募公告</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style>
     html,
@@ -11,20 +11,32 @@
       /* min-width: 0px !important; */
       height: 100%;
       margin: 0;
-      background: url('static/m_notice.png') no-repeat center center;
+      /* background: url('static/m_notice.png') no-repeat center center; */
       position: relative;
-      background-size: 100% 100%;
+      /* background-size: 100%; */
       width: 100%;
       height: 100%;
       font-family: "微软雅黑";
       letter-spacing: 0.02rem;
-      background-attachment: fixed;
+      /* background-attachment: fixed; */
       /* max-width: 375px; */
       margin: 0;
     }
+    body:before {
+      content: ' ';
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url('static/m_notice.png') no-repeat;
+      /* background-size: cover; */
+      background-size: 100% 100%;
+      }
 
     .m-notice-bg-img {
-      max-width: 750px;
+      /* max-width: 750px; */
       /* background: url('static/m_notice.png') no-repeat center center;
       position: relative;
       background-size: 100% 100%;
@@ -172,6 +184,192 @@
       position: fixed;
       top: 0;
     }
+    @media all and (orientation: landscape) {
+      html{
+        background: #fff;
+      }
+      body {
+      /* min-width: 0px !important; */
+      height: 100%;
+      margin: 0;
+      /* background: url('static/m_notice.png') no-repeat center center; */
+      position: relative;
+      background-size: 70% 100%;
+      width: 70%;
+      height: 100%!important;
+      font-family: "微软雅黑";
+      letter-spacing: 0.02rem;
+      background-attachment: fixed;
+      /* max-width: 375px; */
+      margin: 0 15%;
+    }
+    body:before {
+      content: ' ';
+      width: 70%;
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left:15%;
+      background: url('static/m_notice.png') no-repeat;
+      /* background-size: cover; */
+      background-size: 70% 100%;
+      }
+
+    .m-notice-bg-img {
+      /* max-width: 750px; */
+      /* background: url('static/m_notice.png') no-repeat center center;
+      position: relative;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 100%;
+      font-family: "微软雅黑";
+      letter-spacing: 0.02rem; */
+      position: relative;
+    }
+
+    .m-notice-bg-img .notice {
+      /* width: 2.95rem;
+      height: 4.92rem; */
+      width: 70%;
+      /* height: 73%; */
+      position: absolute;
+      top: 0.6rem;
+      padding-left: 15%;
+      padding-right: 15%;
+      /*background: rgba(0, 0, 0, 0.3);*/
+      overflow: hidden;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    .m-notice-bg-img .vague {
+      position: fixed;
+      width: 70%;
+      height: 1rem;
+      /*// background-image: linear-gradient(to top, #fff);*/
+      /*// opacity: 0.5;*/
+      bottom: 16%;
+      /* left: 0; */
+      left: 15%;
+      margin: 0;
+      background: -moz-linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+      background: -ms-linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1));
+      background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
+      background: -webkit-linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+      background: -o-linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+      background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+
+    .m-notice-bg-img .notice_title {
+      font-size: 0.19rem;
+      /* text-align: center; */
+      color: #333333;
+      margin-top: 0.24rem;
+      margin-bottom: 0.24rem;
+      text-align: center;
+    }
+
+    .m-notice-bg-img .notice_condition {
+      color: #333333;
+      font-size: 0.16rem;
+      /*// padding-left: 10%;*/
+      /*// padding-right: 10%;*/
+      text-align: left;
+      margin-bottom: 2.96vh;
+    }
+
+    .m-notice-bg-img .notice_paragraph {
+      color: #333333;
+      font-size: 0.16rem;
+      /*// padding-left: 10%;*/
+      /*// padding-right: 10%;*/
+      text-align: left;
+      line-height: 0.24rem;
+      margin: 0;
+      margin-bottom: 0.1rem;
+    }
+
+    .m-notice-bg-img .notice_subtitle {
+      color: #333333;
+      font-size: 0.16rem;
+      font-weight: bold;
+      /*// padding-left: 10%;*/
+      line-height: 0.24rem;
+      margin: 0;
+      margin-bottom: 0.1rem;
+      text-indent: 2em;
+    }
+
+    .m-notice-bg-img .flowchar {
+      color: #333333;
+      font-size: 0.16rem;
+      /*// padding-left: 10%;*/
+      /*// padding-right: 10%;*/
+      text-align: left;
+      line-height: 0.24rem;
+      margin: 0;
+    }
+
+    .m-notice-bg-img .flowchar img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .m-notice-bg-img .notice_enclosure {
+      margin-top: 0.2rem;
+      font-size: 0.16rem;
+      /*// padding-left: 10%;*/
+    }
+
+    .m-notice-bg-img .notice_ending {
+      margin-top: 0.2rem;
+      font-size: 0.16rem;
+      /*// padding-right: 10%;*/
+      float: right;
+      text-align: center;
+    }
+
+    .m-notice-bg-img .notice_span {
+      text-indent: 2em;
+      display: block;
+    }
+
+    .m-notice-bg-img .notice_ending span {
+      color: #333333;
+      display: inline-block;
+      margin-bottom: 0.1rem;
+    }
+
+    .m-notice-bg-img .download {
+      height: 0.20rem;
+      width: 0.20rem;
+      display: inline-block;
+      background: url(./static/xiazai.png) no-repeat center center;
+      background-size: 100% 100%;
+      margin-right: 0.10rem;
+    }
+
+    .m-notice-bg-img .footer {
+      width: 70%;
+      height: 24%;
+      background: url(./static/m_notice-footer.png) no-repeat;
+      background-size: 100% 100%;
+      position: fixed;
+      left: 15%;
+      bottom: 0;
+    }
+    .m-notice-bg-img .m_notice_logo{
+      width: 70%;
+      height: 10.5%;
+      background: url(./static/m_notice_logo.png) no-repeat;
+      background-size: 100% 100%;
+      position: fixed;
+      left: 15%;
+      top: 0;
+    }
+  }
   </style>
 </head>
 <script>
@@ -248,11 +446,11 @@
           <a href="javascript:;">cmccqyhz@chinamobile.com</a>。邮件标题请统一为： XX公司权益合作申请，邮件请附上“中国移动权益合作意向表”（包括填写完成的电子版，及加盖公章后的扫描件）。</span>
       </p>
       <p class="notice_paragraph">
-        <span class="notice_span">在合作招募申报过程中，如有相关问题和疑问，欢迎联系中国移动权益合作招募团队联系人：韩威，15967110539。</span>
+        <span class="notice_span">在合作招募申报过程中，如有相关问题和疑问，欢迎联系中国移动权益合作招募团队联系人：韩先生，15967110539。</span>
       </p>
       <p class="notice_enclosure">
         <a href="./static/中国移动权益合作意向表.docx">
-          <i class="download"></i>附件：权益合作意向申请表</a>
+          <i class="download"></i>附件：中国移动权益合作意向申请表</a>
       </p>
       <p class="notice_ending">
         <span>中国移动权益合作招募团队</span>
