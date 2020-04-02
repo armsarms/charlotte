@@ -7,19 +7,32 @@
     html,body{
       width: 100%;
       height: 100%;
-    }
-    .notice-bg-img {
+      margin: 0;
       font-family: "仿宋_GB2312";
       letter-spacing: 0.1vw;
       background: url(./static/notice-bg.png) no-repeat center center;
-      position: relative;
+      /* position: fixed;
+      top: 0;
+      left: 0; */
       background-size: 100% 100%;
       width: 100%;
       height: 100%;
       background-attachment: fixed;
     }
+    .notice-bg-img {
+      /* font-family: "仿宋_GB2312";
+      letter-spacing: 0.1vw;
+      background: url(./static/notice-bg.png) no-repeat center center; */
+      /* position: fixed;
+      top: 0;
+      left: 0; */
+      /* background-size: 100% 100%;
+      width: 100%;
+      height: 100%;
+      background-attachment: fixed; */
+    }
     .notice-bg-img .notice-logo {
-      position: absolute;
+      position: fixed;
       top: 3.51vh;
       margin: 0;
       left: 2.55vw;
@@ -37,26 +50,26 @@
     .notice-bg-img .notice {
       /* // width: 40.36vw; */
       height: 91.5%;
-      width: 50%;
-      padding-left: 25%;
+      width: 60%;
+      padding-left: 20%;
       padding-top: 4%;
-      padding-right: 25%;
+      padding-right: 20%;
       position: absolute;
       /* // top: 14.81vh; */
       /* // left: 29.89vw; */
       /* // background: rgba(0, 0, 0, 0.3); */
-      overflow: hidden;
+      /* overflow: hidden;
       overflow-y: auto;
-      overflow-x: hidden;
+      overflow-x: hidden; */
     }
     .notice-bg-img .notice .notice_title {
-      font-size: 2.77vh;
+      font-size: 2.96vh;
       text-align: center;
       color: #333333;
     }
     .notice-bg-img .notice .notice_condition {
       color: #333333;
-      font-size: 1.48vh;
+      font-size:1.85vh;
       padding-left: 10%;
       padding-right: 10%;
       text-align: left;
@@ -64,11 +77,11 @@
     }
     .notice-bg-img .notice .notice_paragraph {
       color: #333333;
-      font-size: 1.48vh;
+      font-size:1.85vh;
       padding-left: 10%;
       padding-right: 10%;
       text-align: left;
-      line-height: 2.77vh;
+      line-height: 2.99vh;
       margin-bottom: 0.92vh;
       margin-top: 0;
     }
@@ -78,10 +91,10 @@
     }
     .notice-bg-img .notice .notice_subtitle {
       color: #333333;
-      font-size: 1.48vh;
+      font-size:1.85vh;
       font-weight: bold;
       padding-left: 10%;
-      line-height: 2.77vh;
+      line-height: 2.99vh;
       margin: 0;
       text-indent: 2em;
       margin-bottom: 0.92vh;
@@ -89,11 +102,11 @@
     .notice-bg-img .notice .flowchar {
       /* // position: relative; */
       color: #333333;
-      font-size: 1.48vh;
+      font-size:1.85vh;
       padding-left: 10%;
       padding-right: 10%;
       text-align: left;
-      line-height: 2.77vh;
+      line-height: 2.99vh;
       margin: 0;
       /* // width: 100%; */
       /* // margin-top: 1.85vh; */
@@ -106,12 +119,12 @@
     }
     .notice-bg-img .notice .notice_enclosure {
       margin-top: 1.85vh;
-      font-size: 1.48vh;
+      font-size:1.85vh;
       padding-left: 10%;
     }
     .notice-bg-img .notice .notice_ending {
       margin-top: 1.85vh;
-      font-size: 1.48vh;
+      font-size:1.85vh;
       padding-right: 10%;
       float: right;
       text-align: center;
@@ -120,6 +133,22 @@
       color: #333333;
       display: inline-block;
       margin-bottom: 1.85vh;
+    }
+    .notice-bg-img  .download{
+      height: 1.85vh;
+      width: 1.04vw;
+      display: inline-block;
+      background: url(./static/xiazai.png) no-repeat center center;
+      background-size:100% 100%;
+      margin-right: 0.52vw; 
+    }
+   .notice-bg-img .footer{
+      width: 100%;
+      height: 23.42vh;
+      background: url(./static/notice-bg2.png) no-repeat;
+      background-size:100% 100%;
+      position: fixed;
+      bottom: 0; 
     }
   </style>
 </head>
@@ -140,7 +169,7 @@
   </h2>
   <div class="notice">
     <h3 class="notice_title">中国移动权益合作伙伴公开招募公告</h3>
-    <h4 class="notice_condition"><i class="el-icon-s-opportunity"></i>：申请开展权益合作的权益合作伙伴，需同时满足以下资质条件</h4>
+    <!-- <h4 class="notice_condition"><i class="el-icon-s-opportunity"></i>：申请开展权益合作的权益合作伙伴，需同时满足以下资质条件</h4> -->
     <p class="notice_paragraph" >尊敬的合作伙伴：<br/>
       <span class="notice_span">您好！为持续深化开放合作的理念，发挥中国移动的规模优势，中国移动将全面开展全集团层面的权益统一运营，并面向全社会公开招募具有优质线上线下权益的合作伙伴。通过广泛汇聚合作伙伴的优质线上线下权益，中国移动将与合作伙伴一起提供满足客户美好数字生活的优质服务，共同打造以权益为纽带的生态合作平台，全力构建基于规模经营的平台经济模式。现将本次权益合作伙伴招募的相关要求说明如下，欢迎有意向合作的合作伙伴踊跃报名。</span>
     </p>
@@ -149,7 +178,6 @@
       <span class="notice_span" >本次招募合作的权益是指给客户提供的特定使用权或资产，包括但不限于线上权益（如视频APP会员、无门槛优惠券）、线下服务（如机场、高铁贵宾厅）等与客户生活息息相关的权益。合作伙伴提供的各类权益需满足以下基本条件：</span>
       <span class="notice_span" >1.线上权益：权威第三方榜单移动APP指数最近连续三个月全国月活数超500万（含）。</span>
       <span class="notice_span" >2.线下权益：行业内排名TOP20的线下权益。行业排名须由合作伙伴提供行业报告/行业调研/行业年报/行业白皮书等材料进行证明。</span>
-      <span class="notice_span" >3.股权合作权益：与中国移动存在股权关系的参股企业的自有权益（不含与第三方的联合权益），须由参股企业提供股权结构说明书等材料进行证明。</span>
     </p>
     <h4 class="notice_subtitle">二、合作基本条件</h4>
     <p class="notice_paragraph">
@@ -185,11 +213,15 @@
     <p class="notice_paragraph">
       <span class="notice_span" >符合合作基本条件和权益范围且有意向开展权益合作的合作伙伴，请将“中国移动权益合作意向表”（详见附件）发送至中国移动权益合作统一邮箱：<a href="javascript:;">cmccqyhz@chinamobile.com</a>。邮件标题请统一为： XX公司权益合作申请，邮件请附上“中国移动权益合作意向表”（包括填写完成的电子版，及加盖公章后的扫描件）。</span>
     </p>
-    <p class="notice_enclosure"><a href="/static/2020401中国移动权益合作伙伴公开招募公告.docx" >附件：权益合作意向申请表</a></p>
+    <p class="notice_paragraph">
+      <span class="notice_span">在合作招募申报过程中，如有相关问题和疑问，欢迎联系中国移动权益合作招募团队联系人：韩威，15967110539。</span>
+    </p>
+    <p class="notice_enclosure"><a href="./static/20200402中国移动权益合作意向表.docx" ><i class="download"></i>附件：权益合作意向申请表</a></p>
     <p class="notice_ending"><span>中国移动权益合作招募团队</span><br/>
       <span style="margin-bottom:18.5vh">2020年4月</span>
     </p>
   </div>
+  <div class="footer"></div>
 </div>
 </body>
 </html>
