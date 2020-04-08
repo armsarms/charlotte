@@ -237,12 +237,13 @@
   }
   browserRedirect();
   window.onload=function(){
+    console.log('执行')
     let sid = getQueryVariable('sid')==false?'':getQueryVariable('sid');
     if(sid.split("?")[0]){
       sid = sid.split("?")[0];
       console.log('sid',sid);
     }
-    customAnalysis(200407001,sid,'',true)
+    customAnalysis(200407001,sid,'',false)
     };
 </script>
 </body>
