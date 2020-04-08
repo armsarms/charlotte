@@ -19,7 +19,7 @@
       height: 100%;
       font-family: "微软雅黑";
       letter-spacing: 0.02rem;
-      background-attachment: fixed;
+      /* background-attachment: fixed; */
       /* max-width: 375px; */
       margin: 0;
     }
@@ -34,7 +34,7 @@
       background: url('static/m_notice.png') no-repeat;
       /* background-size: cover; */
       background-size: 100% 100%;
-      background-attachment: fixed;
+      /* background-attachment: fixed; */
       }
 
     .m-notice-bg-img {
@@ -178,6 +178,22 @@
       position: fixed;
       bottom: 0;
     }
+    .m-notice-bg-img .footer .left_foot{
+      position: absolute;
+      left: 6%;
+      bottom: 1%;
+      width: 12%;
+      height: auto;
+      max-width: 50px;
+    }
+    .m-notice-bg-img .footer .right_foot{
+      position: absolute;
+      right: 7%;
+      bottom: 11%;
+      width: 13%;
+      height: auto;
+      max-width: 50px;
+    }
     .m-notice-bg-img .m_notice_logo{
       width: 100%;
       height: 6.5%;
@@ -186,192 +202,19 @@
       position: fixed;
       top: 0;
     }
-    @media all and (orientation: landscape) {
-      html{
-        background: #fff;
-      }
-      body {
-      /* min-width: 0px !important; */
-      height: 100%;
-      margin: 0;
-      /* background: url('static/m_notice.png') no-repeat center center; */
-      position: relative;
-      background-size: 70% 100%;
-      width: 70%;
-      height: 100%!important;
-      font-family: "微软雅黑";
-      letter-spacing: 0.02rem;
-      background-attachment: fixed;
-      /* max-width: 375px; */
-      margin: 0 15%;
-    }
-    body:before {
-      content: ' ';
-      width: 70%;
-      position: fixed;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left:15%;
-      background: url('static/m_notice.png') no-repeat;
-      /* background-size: cover; */
-      background-size: 70% 100%;
-      }
-
-    .m-notice-bg-img {
-      /* max-width: 750px; */
-      /* background: url('static/m_notice.png') no-repeat center center;
-      position: relative;
-      background-size: 100% 100%;
-      width: 100%;
-      height: 100%;
-      font-family: "微软雅黑";
-      letter-spacing: 0.02rem; */
-      position: relative;
-    }
-
-    .m-notice-bg-img .notice {
-      /* width: 2.95rem;
-      height: 4.92rem; */
-      width: 70%;
-      /* height: 73%; */
+    .m-notice-bg-img .m_notice_logo img {
+      width: 22%;
+      height: auto;
       position: absolute;
-      top: 0.6rem;
-      padding-left: 15%;
-      padding-right: 15%;
-      /*background: rgba(0, 0, 0, 0.3);*/
-      overflow: hidden;
-      overflow-y: auto;
-      overflow-x: hidden;
+      left: 3%;
+      top: 22%;
+      max-width: 80px;
     }
-
-    .m-notice-bg-img .vague {
-      position: fixed;
-      width: 70%;
-      height: 1rem;
-      /*// background-image: linear-gradient(to top, #fff);*/
-      /*// opacity: 0.5;*/
-      bottom: 16%;
-      /* left: 0; */
-      left: 15%;
-      margin: 0;
-      background: -moz-linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-      background: -ms-linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1));
-      background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
-      background: -webkit-linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-      background: -o-linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-      background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    @media only screen and (min-width: 729px) {
+      html,body {
+        font-size: 194px;;
+      }
     }
-
-    .m-notice-bg-img .notice_title {
-      font-size: 0.19rem;
-      /* text-align: center; */
-      color: #333333;
-      margin-top: 0.24rem;
-      margin-bottom: 0.24rem;
-      text-align: center;
-    }
-
-    .m-notice-bg-img .notice_condition {
-      color: #333333;
-      font-size: 0.16rem;
-      /*// padding-left: 10%;*/
-      /*// padding-right: 10%;*/
-      text-align: left;
-      margin-bottom: 2.96vh;
-    }
-
-    .m-notice-bg-img .notice_paragraph {
-      color: #333333;
-      font-size: 0.16rem;
-      /*// padding-left: 10%;*/
-      /*// padding-right: 10%;*/
-      text-align: left;
-      line-height: 0.24rem;
-      margin: 0;
-      margin-bottom: 0.1rem;
-    }
-
-    .m-notice-bg-img .notice_subtitle {
-      color: #333333;
-      font-size: 0.16rem;
-      font-weight: bold;
-      /*// padding-left: 10%;*/
-      line-height: 0.24rem;
-      margin: 0;
-      margin-bottom: 0.1rem;
-      text-indent: 2em;
-    }
-
-    .m-notice-bg-img .flowchar {
-      color: #333333;
-      font-size: 0.16rem;
-      /*// padding-left: 10%;*/
-      /*// padding-right: 10%;*/
-      text-align: left;
-      line-height: 0.24rem;
-      margin: 0;
-    }
-
-    .m-notice-bg-img .flowchar img {
-      width: 100%;
-      height: 100%;
-    }
-
-    .m-notice-bg-img .notice_enclosure {
-      margin-top: 0.2rem;
-      font-size: 0.16rem;
-      /*// padding-left: 10%;*/
-    }
-
-    .m-notice-bg-img .notice_ending {
-      margin-top: 0.2rem;
-      font-size: 0.16rem;
-      /*// padding-right: 10%;*/
-      float: right;
-      text-align: center;
-    }
-
-    .m-notice-bg-img .notice_span {
-      text-indent: 2em;
-      display: block;
-    }
-
-    .m-notice-bg-img .notice_ending span {
-      color: #333333;
-      display: inline-block;
-      margin-bottom: 0.1rem;
-    }
-
-    .m-notice-bg-img .download {
-      height: 0.20rem;
-      width: 0.20rem;
-      display: inline-block;
-      background: url(./static/xiazai.png) no-repeat center center;
-      background-size: 100% 100%;
-      margin-right: 0.10rem;
-    }
-
-    .m-notice-bg-img .footer {
-      width: 70%;
-      height: 24%;
-      background: url(./static/m_notice-footer.png) no-repeat;
-      background-size: 100% 100%;
-      position: fixed;
-      left: 15%;
-      bottom: 0;
-    }
-    .m-notice-bg-img .m_notice_logo{
-      width: 70%;
-      height: 10.5%;
-      background: url(./static/m_notice_logo.png) no-repeat;
-      background-size: 100% 100%;
-      position: fixed;
-      left: 15%;
-      top: 0;
-    }
-  }
   </style>
 </head>
 <script>
@@ -387,7 +230,11 @@
       if (clientWidth != baseWidth) {
         rem = Math.floor(clientWidth / baseWidth * baseFontSize);
       }
-      document.querySelector('html').style.fontSize = rem + 'px';
+      if(rem<=194){
+        document.querySelector('html').style.fontSize = rem + 'px';
+      } else {
+        document.querySelector('html').style.fontSize = 194 + 'px';
+      }
     }
     set();
     window.addEventListener('resize', set);
@@ -461,8 +308,11 @@
       </p>
       <p class="vague"></p>
     </div>
-    <div class="footer"></div>
-    <div class="m_notice_logo"></div>
+    <div class="footer">
+      <img src="./static/left-man.png" alt="" class="left_foot">
+      <img src="./static/right-man.png" alt="" class="right_foot">
+    </div>
+    <div class="m_notice_logo"><img src="./static/notice-logo.png" alt=""></div>
   </div>
 </body>
 
