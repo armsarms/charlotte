@@ -5,7 +5,7 @@
     debug                       -- true:测试环境,false:现网
 */
 let url1 = "http://120.197.230.65:40081/mssp_pps/ela/collect.do?";
-let url2 = "http://h5.mmarket.com/mssp_pps/ela/collect.do?";
+let url2 = "http://h5.mmarket.com/mssp_ppsh5/ela/collect.do?";
 
 function pvAnalysis(id, location, debug) {
     let params = {
