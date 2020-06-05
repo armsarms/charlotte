@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d22d081"],{f683:function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("basics",{attrs:{requestid:"mmap_game_index_v1"}})},c=[],s=t("b979"),u=t("294e"),o={components:{basics:s["a"]},mounted:function(){Object(u["a"])("GameRecom")}},i=o,r=t("2877"),l=Object(r["a"])(i,a,c,!1,null,null,null);n["default"]=l.exports}}]);
+//# sourceMappingURL=chunk-2d22d081.d4620d27.js.map
